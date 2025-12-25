@@ -350,13 +350,21 @@ Contributions are welcome! Here's how you can help:
 
 ### 🎓 CS312T - Algorithms Analysis and Design
 
-| # | Name | ID | Role |
-|:-:|:----:|:--:|:----:|
-| **1** | **Eman Ahmed Gabr** | 1000287526 | Algorithm Design |
-| **2** | **Ahmed Mohamed Othman** | 1000288167 | Implementation |
-| **3** | **Ibrahim Reda Mohamed Abo El Ela** | 1000287457 | Testing & Analysis |
-| **4** | **Hanan Waleed Nasr** | 1000288297 | Documentation |
-| **5** | **Romisaa Mohamed Fadel** | 1000287325 | Report Writing |
+#### 👨‍🏫 Course Instructors
+
+- **Dr. Amr El-Edkawy** - Course Professor
+- **Dr. Samir El-Mougy** - Course Professor
+- **Eng. Abdelrahman Gamal** - Teaching Assistant
+
+#### 👥 Team Members
+
+| # | Name | ID |
+|:-:|:-----|:--:|
+| **1** | **Eman Ahmed Gabr** | 1000287526 |
+| **2** | **Ahmed Mohamed Othman** | 1000288167 |
+| **3** | **Ibrahim Reda Mohamed Abo El Ela** | 1000287457 |
+| **4** | **Hanan Waleed Nasr** | 1000288297 |
+| **5** | **Romisaa Mohamed Fadel** | 1000287325 |
 
 **Project Date**: December 2025
 
@@ -364,32 +372,19 @@ Contributions are welcome! Here's how you can help:
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License
-
-Copyright (c) 2025 Peak Overlap Analysis Team
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files...
-```
-
----
-
 ## 🙏 Acknowledgments
 
-- 📚 Course: **CS312T - Algorithms Analysis and Design**
-- 👨‍🏫 Instructor: **[Professor Name]**
-- 📖 References:
+- 📚 **Course**:Algorithms Analysis and Design
+- 👨‍🏫 **Professors**: 
+  - Dr. Amr El-Edkawy
+  - Dr. Samir El-Mougy
+- 👨‍💻 **Teaching Assistant**: Eng. Abdelrahman Gamal
+- 📖 **References**:
   - *Introduction to Algorithms* by Cormen et al.
   - *Algorithm Design* by Kleinberg & Tardos
   - LeetCode Problem 253: Meeting Rooms II
 
 ---
-
 
 <div align="center">
 
