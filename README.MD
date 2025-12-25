@@ -4,14 +4,12 @@
 
 ![Algorithm Analysis](https://img.shields.io/badge/Algorithm-Analysis-blue?style=for-the-badge)
 ![C++](https://img.shields.io/badge/C++-11%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-Report-008080?style=for-the-badge&logo=latex&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 **A comprehensive algorithmic analysis of the Meeting Room Scheduling Problem**
 
 [🚀 Quick Start](#-quick-start) · [📊 Results](#-performance-comparison) · [👥 Team](#-team)
 
-[![GitHub](https://img.shields.io/badge/GitHub-romisaa5-181717?style=for-the-badge&logo=github)](https://github.com/romisaa5)
 
 </div>
 
