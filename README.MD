@@ -9,7 +9,7 @@
 
 **A comprehensive algorithmic analysis of the Meeting Room Scheduling Problem**
 
-[📖 View Report](#-project-structure) · [🚀 Quick Start](#-quick-start) · [📊 Results](#-performance-comparison) · [👥 Team](#-team)
+[🚀 Quick Start](#-quick-start) · [📊 Results](#-performance-comparison) · [👥 Team](#-team)
 
 [![GitHub](https://img.shields.io/badge/GitHub-romisaa5-181717?style=for-the-badge&logo=github)](https://github.com/romisaa5)
 
@@ -45,7 +45,7 @@ This problem has real-world applications in:
 - 📈 **Performance Benchmarking**: Automated testing and comparison
 - 🧪 **Comprehensive Testing**: Predefined examples + random test generation
 - 📊 **Scalability Analysis**: Tests from 50 to 1000+ meetings
-- 📝 **Professional Documentation**: Complete LaTeX report with complexity analysis
+- 📝 **Professional Documentation**: Complete report with complexity analysis
 - 🎨 **Clean Code**: Well-commented, production-ready C++ implementation
 
 ---
@@ -56,15 +56,12 @@ This problem has real-world applications in:
 📦 Peak-Overlap-Analysis
 ├── 📄 README.md                              # This file
 ├── 📁 report/
-│   └── 📄 peak_overlap_analysis_report.tex  # Complete LaTeX report
+│   └── 📄 peak_overlap_analysis_report.tex  
 ├── 📁 code/
-│   ├── 📄 meeting_rooms_scheduler.cpp       # Full implementation (both algorithms)
-│   ├── 📄 naive_meeting_rooms.cpp           # Naive algorithm only
-│   └── 📄 optimized_meeting_rooms.cpp       # Optimized algorithm only
-├── 📁 docs/
-│   └── 📄 peak_overlap_analysis_report.pdf  # Compiled PDF report
-└── 📁 examples/
-    └── 📄 test_cases.txt                     # Sample test cases
+    ├── 📄 naive_meeting_rooms.cpp           # Naive algorithm only
+    └── 📄 optimized_meeting_rooms.cpp       # Optimized algorithm only
+
+
 ```
 
 ---
@@ -256,7 +253,6 @@ This project demonstrates:
 | Technology | Purpose |
 |:----------:|:-------:|
 | ![C++](https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white) | Algorithm Implementation |
-| ![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white) | Report Documentation |
 | ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white) | Version Control |
 | ![Markdown](https://img.shields.io/badge/Markdown-000000?style=flat&logo=markdown&logoColor=white) | Documentation |
 
@@ -348,7 +344,7 @@ Contributions are welcome! Here's how you can help:
 
 <div align="center">
 
-### 🎓 CS312T - Algorithms Analysis and Design
+### Algorithms Analysis and Design
 
 #### 👨‍🏫 Course Instructors
 
