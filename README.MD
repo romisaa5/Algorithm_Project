@@ -390,8 +390,6 @@ Contributions are welcome! Here's how you can help:
 
 ### ⭐ Star this repository if you found it helpful!
 
-**Made with ❤️ by the Peak Overlap Analysis Team**
-
 [![GitHub stars](https://img.shields.io/github/stars/romisaa5/peak-overlap-analysis?style=social)](https://github.com/romisaa5/peak-overlap-analysis/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/romisaa5/peak-overlap-analysis?style=social)](https://github.com/romisaa5/peak-overlap-analysis/network/members)
 [![GitHub watchers](https://img.shields.io/github/watchers/romisaa5/peak-overlap-analysis?style=social)](https://github.com/romisaa5/peak-overlap-analysis/watchers)
