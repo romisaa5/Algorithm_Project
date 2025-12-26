@@ -101,6 +101,20 @@ pdflatex peak_overlap_analysis_report.tex  # Run twice for correct TOC
 
 ---
 
+## 🎥 Project Video Explanation
+
+📺 A complete video walkthrough of the project is available, covering:
+- Problem overview and motivation  
+- Algorithm design and comparison  
+- Complexity analysis  
+- Code explanation and test cases  
+
+🔗 **Watch here:**  
+https://drive.google.com/drive/folders/1dfR578z1PUSZsfZgB1BRnED_iUSPprhC?usp=sharing
+
+
+---
+
 ## 🧮 Algorithm Comparison
 
 ### 🐌 Naive Algorithm (Brute Force)
