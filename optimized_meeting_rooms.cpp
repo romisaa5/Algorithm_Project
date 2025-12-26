@@ -3,29 +3,36 @@
 #include <algorithm>
 using namespace std;
 
-int minMeetingRoomsNaive(vector<pair<int,int>>& meetings) {
+int minMeetingRooms(vector<pair<int,int>>& meetings) {
     int n = meetings.size();
+    
     if (n == 0) return 0;
     
-    int maxRooms = 0;
+    vector<int> start(n), end(n);
     
     for (int i = 0; i < n; i++) {
-        int overlap = 1;
-        
-        for (int j = 0; j < n; j++) {
-            if (i != j) {
-                int start1 = meetings[i].first;
-                int end1 = meetings[i].second;
-                int start2 = meetings[j].first;
-                int end2 = meetings[j].second;
-                
-                if (start2 < end1 && start1 < end2) {
-                    overlap++;
-                }
-            }
+        start[i] = meetings[i].first;
+        end[i]   = meetings[i].second;
+    }
+    
+    sort(start.begin(), start.end());
+    sort(end.begin(), end.end());
+    
+    int i = 0;
+    int j = 0;
+    int current = 0;
+    int maxRooms = 0;
+    
+    while (i < n) {
+        if (start[i] < end[j]) {
+            current++;
+            maxRooms = max(maxRooms, current);
+            i++;
+        } 
+        else {
+            current--;
+            j++;
         }
-        
-        maxRooms = max(maxRooms, overlap);
     }
     
     return maxRooms;
@@ -48,9 +55,9 @@ void printMeetings(vector<pair<int,int>>& meetings) {
 }
 
 int main() {
-    cout << "=== Meeting Rooms - Naive Solution ===" << endl;
-    cout << "Time Complexity: O(n^2)" << endl;
-    cout << "Space Complexity: O(1)" << endl << endl;
+    cout << "=== Meeting Rooms - Two Pointers Solution ===" << endl;
+    cout << "Time Complexity: O(n log n)" << endl;
+    cout << "Space Complexity: O(n)" << endl << endl;
     
     vector<pair<int,int>> meetings1 = {
         {900, 910}, {940, 1200}, {950, 1120},
@@ -59,7 +66,7 @@ int main() {
     
     cout << "Test Case 1:" << endl;
     printMeetings(meetings1);
-    cout << "Minimum rooms required: " << minMeetingRoomsNaive(meetings1) << endl;
+    cout << "Minimum rooms required: " << minMeetingRooms(meetings1) << endl;
     
     cout << "\n" << string(50, '-') << "\n" << endl;
     vector<pair<int,int>> meetings2 = {
@@ -68,7 +75,7 @@ int main() {
     
     cout << "Test Case 2 (No overlap):" << endl;
     printMeetings(meetings2);
-    cout << "Minimum rooms required: " << minMeetingRoomsNaive(meetings2) << endl;
+    cout << "Minimum rooms required: " << minMeetingRooms(meetings2) << endl;
     
     cout << "\n" << string(50, '-') << "\n" << endl;
     vector<pair<int,int>> meetings3 = {
@@ -77,7 +84,7 @@ int main() {
     
     cout << "Test Case 3 (All overlap):" << endl;
     printMeetings(meetings3);
-    cout << "Minimum rooms required: " << minMeetingRoomsNaive(meetings3) << endl;
+    cout << "Minimum rooms required: " << minMeetingRooms(meetings3) << endl;
     
     cout << "\n" << string(50, '-') << "\n" << endl;
     vector<pair<int,int>> meetings4 = {
@@ -86,7 +93,7 @@ int main() {
     
     cout << "Test Case 4 (Back-to-back):" << endl;
     printMeetings(meetings4);
-    cout << "Minimum rooms required: " << minMeetingRoomsNaive(meetings4) << endl;
+    cout << "Minimum rooms required: " << minMeetingRooms(meetings4) << endl;
     
     cout << "\n" << string(50, '-') << "\n" << endl;
     vector<pair<int,int>> meetings5 = {
@@ -95,7 +102,7 @@ int main() {
     
     cout << "Test Case 5 (Single meeting):" << endl;
     printMeetings(meetings5);
-    cout << "Minimum rooms required: " << minMeetingRoomsNaive(meetings5) << endl;
+    cout << "Minimum rooms required: " << minMeetingRooms(meetings5) << endl;
     
     cout << "\n" << string(50, '-') << "\n" << endl;
     vector<pair<int,int>> meetings6 = {
@@ -105,7 +112,7 @@ int main() {
     
     cout << "Test Case 6 (Complex schedule):" << endl;
     printMeetings(meetings6);
-    cout << "Minimum rooms required: " << minMeetingRoomsNaive(meetings6) << endl;
+    cout << "Minimum rooms required: " << minMeetingRooms(meetings6) << endl;
     
     return 0;
 }

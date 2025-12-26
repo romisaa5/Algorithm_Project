@@ -5,33 +5,18 @@ using namespace std;
 
 int minMeetingRooms(vector<pair<int,int>>& meetings) {
     int n = meetings.size();
-    
     if (n == 0) return 0;
     
-    vector<int> start(n), end(n);
-    
+    int maxRooms = 1;
     for (int i = 0; i < n; i++) {
-        start[i] = meetings[i].first;
-        end[i]   = meetings[i].second;
-    }
-    
-    sort(start.begin(), start.end());
-    sort(end.begin(), end.end());
-    
-    int i = 0;
-    int j = 0;
-    int current = 0;
-    int maxRooms = 0;
-    
-    while (i < n) {
-        if (start[i] < end[j]) {
-            current++;
-            maxRooms = max(maxRooms, current);
-            i++;
-        } else {
-            current--;
-            j++;
+        int count = 0;
+        for (int j = 0; j < n; j++) {
+            if (meetings[j].first <= meetings[i].first && meetings[i].first < meetings[j].second) {
+                count++;
+            }
         }
+        
+        maxRooms = max(maxRooms, count);
     }
     
     return maxRooms;
@@ -54,7 +39,9 @@ void printMeetings(vector<pair<int,int>>& meetings) {
 }
 
 int main() {
-    cout << "=== Meeting Rooms Problem ===" << endl << endl;
+    cout << "=== Meeting Rooms - Naive Solution ===" << endl;
+    cout << "Time Complexity: O(n^2)" << endl;
+    cout << "Space Complexity: O(1)" << endl << endl;
     
     vector<pair<int,int>> meetings1 = {
         {900, 910}, {940, 1200}, {950, 1120},
